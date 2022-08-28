@@ -5,17 +5,16 @@ import { Color } from "../../styles/colors";
 const StyledButton = styled.button`
   background: ${Color.Blue};
   border: none;
-
   font-size: 24px;
   line-height: 35px;
 
+  width: 100%;
   display: flex;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
   letter-spacing: -0.3px;
 
   color: ${Color.White};
-  padding: 5px 110px;
+  padding: 5px;
 
   @media (max-width: ${Breakpoint.LG}) {
     font-size: 20px;
@@ -25,7 +24,6 @@ const StyledButton = styled.button`
   @media (max-width: ${Breakpoint.MD}) {
     font-size: 16px;
     line-height: 18px;
-    padding: 5px 50px;
   }
 `;
 

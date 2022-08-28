@@ -38,7 +38,7 @@ const Title = styled.h2`
   @media (max-width: ${Breakpoint.MD}) {
     font-size: 25px;
     line-height: 26px;
-    margin-block: 10px;
+    margin-block: 20px;
   }
 `;
 
@@ -73,7 +73,7 @@ const Total = styled.span`
 
   display: flex;
   align-self: start;
-  margin-block: 20px;
+  margin-block: 30px;
   letter-spacing: -0.3px;
 
   color: ${Color.Black};
@@ -86,7 +86,7 @@ const Total = styled.span`
   @media (max-width: ${Breakpoint.MD}) {
     font-size: 18px;
     line-height: 20px;
-    margin-block: 10px;
+    margin-block: 20px;
   }
 `;
 

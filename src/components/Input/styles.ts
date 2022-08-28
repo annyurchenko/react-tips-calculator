@@ -6,6 +6,7 @@ const StyledInput = styled.input`
   font-size: 18px;
   line-height: 26px;
 
+  width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -17,7 +18,7 @@ const StyledInput = styled.input`
   border: none;
   outline: none;
   border-radius: 30px;
-  padding: 10px 70px;
+  padding: 10px 0;
   margin-bottom: 30px;
 
   &::-webkit-inner-spin-button,
@@ -34,8 +35,7 @@ const StyledInput = styled.input`
   @media (max-width: ${Breakpoint.MD}) {
     font-size: 15px;
     line-height: 16px;
-    padding: 10px 50px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 `;
 
