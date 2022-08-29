@@ -6,7 +6,7 @@ interface IProps {
 
 export const Button = ({ isDisabled }: IProps) => {
   return (
-    <StyledButton type="submit" disabled={isDisabled}>
+    <StyledButton type="submit" $disabled={isDisabled} disabled={isDisabled}>
       Ohhhoooo 🍻
     </StyledButton>
   );

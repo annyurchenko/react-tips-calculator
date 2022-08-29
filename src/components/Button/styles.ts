@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Breakpoint } from "../../styles/breakpoints";
 import { Color } from "../../styles/colors";
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<{ $disabled: boolean }>`
   background: ${Color.Blue};
   border: none;
   font-size: 24px;
@@ -15,6 +15,8 @@ const StyledButton = styled.button`
 
   color: ${Color.White};
   padding: 5px;
+
+  opacity: ${({ $disabled }) => ($disabled ? "0.5" : "1")};
 
   @media (max-width: ${Breakpoint.LG}) {
     font-size: 20px;
