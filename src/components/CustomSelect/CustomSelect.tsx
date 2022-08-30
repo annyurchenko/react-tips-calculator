@@ -1,5 +1,5 @@
 import Select, { SingleValue } from "react-select";
-import { ITipOptions } from "../../types";
+import { ITipOption } from "../../types";
 import { customStyles } from "./styles";
 
 interface IProps {
@@ -7,7 +7,7 @@ interface IProps {
   setTips: (value: number) => void;
 }
 
-export const options: ITipOptions[] = [
+export const options: ITipOption[] = [
   { value: 10, label: "10%" },
   { value: 15, label: "15%" },
   { value: 20, label: "20%" },
@@ -17,7 +17,7 @@ export const CustomSelect = ({ tips, setTips }: IProps) => {
   const getValue = () =>
     tips ? options.find((option) => option.value === tips) : options[0];
 
-  const handleTips = (option: SingleValue<ITipOptions>) => {
+  const handleTips = (option: SingleValue<ITipOption>) => {
     if (option) setTips(option.value);
   };
 

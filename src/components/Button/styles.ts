@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Breakpoint } from "../../styles/breakpoints";
-import { Color } from "../../styles/colors";
+import { Breakpoint } from "../../ui/breakpoints";
+import { Color } from "../../ui/colors";
 
 const StyledButton = styled.button<{ $disabled: boolean }>`
   background: ${Color.Blue};
@@ -18,12 +18,12 @@ const StyledButton = styled.button<{ $disabled: boolean }>`
 
   opacity: ${({ $disabled }) => ($disabled ? "0.5" : "1")};
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     font-size: 20px;
     line-height: 25px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     font-size: 16px;
     line-height: 18px;
   }

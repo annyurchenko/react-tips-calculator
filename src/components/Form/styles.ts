@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Color } from "../../styles/colors";
-import { Breakpoint } from "../../styles/breakpoints";
+import { Color } from "../../ui/colors";
+import { Breakpoint } from "../../ui/breakpoints";
 
 const StyledForm = styled.form`
   display: flex;
@@ -9,11 +9,11 @@ const StyledForm = styled.form`
   align-items: center;
   padding: 50px;
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     padding: 25px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     padding: 50px 15px;
   }
 `;
@@ -30,12 +30,12 @@ const Title = styled.h2`
 
   color: ${Color.Black};
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     font-size: 30px;
     line-height: 32px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     font-size: 25px;
     line-height: 26px;
     margin-block: 20px;
@@ -54,12 +54,12 @@ const Description = styled.p`
 
   color: ${Color.DarkGray};
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     font-size: 20px;
     line-height: 21px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     font-size: 18px;
     line-height: 20px;
     margin-block: 20px;
@@ -78,12 +78,12 @@ const Total = styled.span`
 
   color: ${Color.Black};
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     font-size: 20px;
     line-height: 21px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     font-size: 18px;
     line-height: 20px;
     margin-block: 20px;

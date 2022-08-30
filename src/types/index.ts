@@ -1,9 +1,4 @@
-export enum Breakpoints {
-  SM = "414px",
-  MD = "744px",
-}
-
-export interface ITipOptions {
+export interface ITipOption {
   readonly value: number;
   readonly label: string;
 }

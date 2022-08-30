@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Breakpoint } from "../../styles/breakpoints";
-import { Color } from "../../styles/colors";
+import { Breakpoint } from "../../ui/breakpoints";
+import { Color } from "../../ui/colors";
 
 const StyledInput = styled.input`
   font-size: 18px;
@@ -27,12 +27,12 @@ const StyledInput = styled.input`
     margin: 0;
   }
 
-  @media (max-width: ${Breakpoint.LG}) {
+  @media (max-width: ${Breakpoint.LG}px) {
     font-size: 16px;
     line-height: 18px;
   }
 
-  @media (max-width: ${Breakpoint.MD}) {
+  @media (max-width: ${Breakpoint.MD}px) {
     font-size: 15px;
     line-height: 16px;
     margin-bottom: 20px;
